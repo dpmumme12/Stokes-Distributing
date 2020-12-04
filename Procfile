@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn stokes.wsgi
+web: gunicorn stokes_dist.wsgi
