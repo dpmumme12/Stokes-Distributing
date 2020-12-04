@@ -1,0 +1,38 @@
+a {
+    color: @nav_color;
+    text-decoration: none;
+    .transition-all;
+
+    &:hover,
+    &:focus {
+        color: @primary_color;
+        text-decoration: none;
+        .transition-all;
+    }
+
+    &:focus {
+        outline: 1px #eeeeee dotted;
+        .transition-all;
+    }
+}
+
+.entry-content p > a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+article,
+aside {
+    margin-bottom: 0;
+    background: #ffffff;
+    border: 1px #dddddd solid;
+    .box-shadow;
+}

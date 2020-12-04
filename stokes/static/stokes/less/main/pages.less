@@ -1,0 +1,213 @@
+// Page - General
+
+.load-more-wrapper {
+    margin: 0 auto;
+    text-align: center;
+
+    & > a {
+        color: @nav_color;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    & > a > i {
+        margin-right: 5px;
+    }
+}
+
+.page .load-more-wrapper {
+    margin: 25px 0 0 0;
+}
+
+.page-section {
+    position: relative;
+    padding: 70px 0;
+
+    &:first-of-type::before {
+        content: "";
+    }
+
+    &:nth-of-type(even) {
+        background-color: #f2f2f2;
+    }
+
+    &:nth-of-type(odd) {
+        background-color: #ffffff;
+    }
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+
+    & > span {
+        font-size: 1.2em;
+        position: relative;
+
+        &::before {
+            content: url("../img/craft-deco-left.png");
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &::after {
+            content: url("../img/craft-deco-right.png");
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}
+
+.section-title {
+    font-weight: 600;
+    border-bottom: 1px #d6d6d6 dashed;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.page:not(.blog) .entry-content .row {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.page:not(.blog) .entry-content .isotope-wrapper.row {
+    margin-bottom: 0;
+}
+
+// Contact
+.contact-details {
+    margin-bottom: 15px;
+    padding: 25px;
+    background: @box_color;
+    border: 2px #dddddd solid;
+    .smoothing-subpixel;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.contact-address > li:last-of-type {
+    margin-top: 10px;
+}
+
+// Jobs
+.job-item {
+    margin-bottom: 50px;
+
+    & h3 {
+        border-bottom: #dddddd 2px solid;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+// Events
+
+.events-wrapper {
+    & img {
+        margin-bottom: 15px;
+    }
+
+    & .event-meta {
+        padding: 5px 0;
+        border-top: 1px #aaaaaa solid;
+        border-bottom: 1px #aaaaaa solid;
+        font-size: 13px;
+        color: @nav_color;
+        font-weight: 600;
+
+        & > li {
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+
+            &::before {
+                padding-right: 10px;
+                color: @heading_color;
+            }
+
+            &::after {
+                content: "|";
+                display: inline-block;
+                position: relative;
+                left: 7px;
+                color: #aaaaaa;
+            }
+
+            &:last-of-type::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.event-title {
+    margin-bottom: 10px;
+}
+
+.event-modal-meta li::before {
+    width: 25px;
+}
+
+.event-time::before {
+    font-family: "FontAwesome";
+    content: "\f017";
+    display: inline-block;
+}
+
+.event-location::before {
+    font-family: "FontAwesome";
+    content: "\f041";
+    display: inline-block;
+}
+
+.event-date::before {
+    font-family: "FontAwesome";
+    content: "\f073";
+    display: inline-block;
+}
+
+.event-modal-meta {
+    background: @box_color;
+    font-size: 14px;
+    padding: 10px;
+    height: 225px;
+    border: 2px #dddddd solid;
+    .smoothing-subpixel;
+}
+
+.modal-event-title {
+    border-bottom: 2px #dddddd solid;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+// Beers
+
+.modal-event {
+    & .tab-content {
+        margin: 15px 0;
+
+        & img {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.modal-beers table {
+    font-size: 13px;
+}

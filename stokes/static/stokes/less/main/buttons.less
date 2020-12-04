@@ -1,0 +1,52 @@
+.btn {
+    padding: 8px 18px;
+    .border-radius-zero;
+    color: @nav_color;
+    .smoothing-antialiased;
+}
+
+.btn[type="submit"] {
+    padding: 9.5px 18px;
+}
+
+.btn-default {
+    background-color: transparent;
+    font-weight: 600;
+    border-width: 2px;
+    color: @nav_color;
+    border-color: @nav_color;
+    .border-radius-zero;
+    .transition-all;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+        background-color: @primary_color;
+        border-color: @primary_color;
+        color: #ffffff;
+        outline: 0;
+        .shadow-none;
+        .transition-all;
+    }
+}
+
+.btn-white {
+    vertical-align: middle;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: transparent;
+    font-weight: 600;
+    .smoothing-subpixel;
+
+    & :hover {
+        background-color: #ffffff;
+        color: @heading_color;
+    }
+}
+
+.btn-centered {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}

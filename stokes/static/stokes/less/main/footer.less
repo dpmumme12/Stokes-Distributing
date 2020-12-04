@@ -1,0 +1,98 @@
+.footer-wrapper {
+    position: relative;
+
+    & .footer-nav-title {
+        color: #ffffff;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+
+    & .footer-nav-title > span {
+        border-bottom: 1px #ffffff dashed;
+        padding-bottom: 5px;
+    }
+}
+
+.footer-secondary {
+    padding: 15px 0;
+    color: #444444;
+
+    & p {
+        margin-bottom: 0;
+        color: #aaaaaa;
+    }
+
+    & .footer-secondary-right {
+        text-align: right;
+    }
+
+    & .footer-secondary-nav {
+        text-align: right;
+    }
+
+    & .social-icons {
+        margin: 0;
+        padding: 12px;
+        line-height: 1;
+
+        & > li > a {
+            text-decoration: none;
+            color: @body_color;
+
+            &:hover {
+                color: darken(@primary_color, 10%);
+            }
+        }
+
+        & > li:first-child {
+            padding-left: 0;
+        }
+
+        & li:last-child {
+            padding-right: 0;
+        }
+    }
+
+    & ul li:first-of-type {
+        padding-left: 0;
+    }
+
+    & ul {
+        margin: 0;
+    }
+
+    & ul li:last-of-type {
+        padding-right: 0;
+    }
+
+    & ul > li > a {
+        color: @primary_color;
+        position: relative;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    & small {
+        color: #ababab;
+    }
+}
+
+.home .footer-secondary {
+    background-color: #f2f2f2;
+}
+
+.page .footer-secondary {
+    background-color: #f2f2f2;
+    border-top: 1px #dddddd solid;
+}
+
+.footer-newsletter .btn-default {
+    background-color: @primary_color;
+    border-color: @primary_color;
+    color: #ffffff;
+
+    &:hover {
+        background-color: darken(@primary_color, 10%);
+        border-color: transparent;
+    }
+}
