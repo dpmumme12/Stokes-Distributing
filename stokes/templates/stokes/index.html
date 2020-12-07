@@ -209,7 +209,7 @@
 					<div class="new-product-carousel">
 						{% for product in new_products %}
 							<div class="client-item" >
-								<img alt="" src={{product.Image.url}} style="height: 300px; width: auto; margin: 0 auto"/>
+								<a href={{product.Image.url}}><img alt="" src={{product.Image.url}} style="height: 300px; width: auto; margin: 0 auto"/></a>
 								<h3 class="award-title">{{ product.Title }}</h3>
 							</div>
 						{% endfor %}
@@ -225,7 +225,7 @@
 						<div class="clients-carousel">
 							{% for brand in brands %}
 								<div class="client-item">
-									<a href="{{ brand.Brands_Website }}"><img alt="" src={{brand.Image.url}} style="height: 150px; width: 150px;"/></a>
+									<a href="{{ brand.Brands_Website }}"><img alt="" src={{brand.Image.url}} style="max-height: 150px; height: auto; width: 150px;"/></a>
 								</div>
 							{% endfor %}
 						</div>
