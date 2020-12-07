@@ -28,7 +28,7 @@ SECRET_KEY = 'q72-^x*1q156o8(o!a&==-rk5c0j0va4$*upz%b4gn&nu9&2d5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://stokesdistributing.herokuapp.com/']
 
 
 # Application definition
