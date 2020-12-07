@@ -125,8 +125,8 @@ USE_TZ = True
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
-AWS_ACCESS_KEY_ID = 'AKIAVIJNXW7FX2K6BDXG'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = os.environ['S3_KEY']
+AWS_SECRET_ACCESS_KEY = os.environ['S3_SECRET']
 AWS_STORAGE_BUCKET_NAME = 'django-project-stokes'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
