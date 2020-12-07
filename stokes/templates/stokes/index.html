@@ -224,8 +224,8 @@
 					<div class="row">
 						<div class="clients-carousel">
 							{% for brand in brands %}
-								<div class="client-item">
-									<a href="{{ brand.Brands_Website }}"><img alt="" src={{brand.Image.url}} style="max-height: 150px; height: auto; width: 150px;"/></a>
+								<div class="client-item" style="max-height: 150px; height: auto; width: 150px;" >
+									<a href="{{ brand.Brands_Website }}"><img alt="" src={{brand.Image.url}} class="brand-image"/></a>
 								</div>
 							{% endfor %}
 						</div>
