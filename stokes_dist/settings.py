@@ -135,7 +135,7 @@ AWS_DEFAULT_ACL = 'public-read'
 AWS_LOCATION = 'static'
 
 STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'static')
+   os.path.join(BASE_DIR, 'static')
 ]
 
 

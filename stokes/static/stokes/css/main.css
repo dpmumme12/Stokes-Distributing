@@ -2737,9 +2737,15 @@ figure:not(.format-video):hover::after,
   float: right;
 }
 
+.desktop-pic{
+  display: block !important;
+}
+
+.mobile-pic{
+  display: none !important;
+}
+
 @media all and (max-width: 1200px) {
-  .branding-wrapper{display: block; margin-top: 50px;}
-  .branding-wrapper .branding-logo > img{display: block;}
   .job-description-div{display: block;}
   .job-div{display: block;}
   .btn-primary{margin: 0 auto;}
@@ -2750,7 +2756,9 @@ figure:not(.format-video):hover::after,
   .brand-div{margin-bottom: 10px;}
   .new-product-header{display: block; margin-top: auto; text-align: center;}
   .new-product-carousel{display: block; width: auto; float: none; margin-top: 10px;}
-  .hero-wrap{height: 180vh;}
-  .features-pics{height: 270px;}
-
+  .hero-wrap{height: auto;}
+  .desktop-pic{display: none !important;}
+  .mobile-pic{display: block !important;}
+  .heading{font-size: 26px;}
 }
+

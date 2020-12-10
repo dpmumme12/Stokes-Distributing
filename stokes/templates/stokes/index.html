@@ -91,7 +91,7 @@
 				<div class="topbar topbar-hero row">
 					<div class="nav-wrapper col-md-12 hidden-sm hidden-xs">
 						<nav class="list-unstyled main-navigation">
-								<a href="{% url 'index' %}"><!--<img alt="" src="{% static 'stokes\img\stokes logo no background CLEARER.png' %}" style="width: auto; height: 60px;"/>--><h2 style="display: inline; color: white; font-family: HelveticaNeue-Light;">Stokes Distributing</h2></a>
+								<a href="{% url 'index' %}"><h2 style="display: inline; color: white; font-family: HelveticaNeue-Light;" class="heading">Stokes Distributing</h2></a>
 							<!-- Left Menu -->
 							<ul class="list-unstyled list-inline topbar-right">
 								<li class="current"><a href="{% url 'index' %}">Home</a></li>
@@ -104,11 +104,6 @@
 						</nav>
 					</div>
 					
-					
-					<div class="branding-wrapper">
-						<a class="branding-logo" href="{% url 'index' %}"><img alt="" src="{% static 'stokes\img\stokes-logo2.jpg' %}" style="width: auto; height: 140px;"/></a>
-					</div>
-				
 
 					<!-- Mobile Navigation Toggle -->
 					<div class="mobile-toggle topbar-right col-sm-6 col-xs-6 hidden-md hidden-lg">
@@ -172,7 +167,8 @@
 								<div class="features-grid">
 									<a href="{% url 'events' %}">
 										<figure>
-											<img alt="" src="{% static 'stokes/img/meetup.jpg' %}" class="features-pics"/>
+											<img alt="" src="{% static 'stokes/img/meetup-2.jpg' %}" class="desktop-pic"/>
+											<img alt="" src="{% static 'stokes/img/meetup.jpg' %}" class="mobile-pic"/>
 											<figcaption>
 												<h2>Upcoming Events</h2>
 												<p>See our latest events schedule</p>
@@ -185,7 +181,8 @@
 								<div class="features-grid">
 									<a href="{% url 'contact' %}">
 										<figure>
-											<img alt="" src="{% static 'stokes\img\download.jpg' %}" class="features-pics"/>
+											<img alt="" src="{% static 'stokes\img\phone.jpg' %}" class="desktop-pic"/>
+											<img alt="" src="{% static 'stokes\img\download.jpg' %}" class="mobile-pic"/>
 											<figcaption>
 												<h2>Get in Touch</h2>
 												<p>Let us know your opinion</p>
