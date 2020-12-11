@@ -82,3 +82,7 @@ def events(request):
         "first_range": range(0,len(events) + 1, 3),
         "second_range": range(len(events))
     })
+
+def product_finder(request):
+    
+    return render(request, "stokes/product_finder.html")

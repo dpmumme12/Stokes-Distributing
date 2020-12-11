@@ -10,7 +10,8 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('contact', views.contact, name='contact'),
     path('events', views.events, name='events'),
-    path('jobs', views.jobs, name='jobs')
+    path('jobs', views.jobs, name='jobs'),
+    path('ProductFinder', views.product_finder, name='product_finder')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = 'Stokes Distributing Admin'

@@ -99,8 +99,8 @@
 								<li><a href="{% url 'about' %}">About</a></li>
 								<li><a href="{% url 'jobs' %}">Jobs</a></li>
 								<li><a href="{% url 'events' %}">Events</a></li>
-								<li><a href="{% url 'contact' %}">Contact</a></li>
-								<li><a href="{% url 'product_finder' %}">Product Finder</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li><a href="{% url 'product_finder' %}">Product Finder</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -139,7 +139,7 @@
 									<meta itemprop="position" content="1" />
 								</li>
 								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-									<span itemprop="name">About</span>
+									<span itemprop="name">Product Finder</span>
 									<meta itemprop="position" content="2" />
 								</li>
 							</ol>
@@ -147,40 +147,12 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="container">
-				<br>
-				<div>
-					<div>
-						<h2 style="color: rgb(168, 37, 37); ">Our Mission:</h2>
-					</div>
-					<div style="float: left;">
-						<p style="font-size: large;">“Exceed the expectations of our customers through our team’s passion and dedication to providing quality products and outstanding service to the people of South MS. ”</p>
-					</div>
+			<div>
+				<div style="height: 800px; width: 100%; overflow: hidden; position: relative">
+					<iframe src="https://stokesdist.com/ECP_20.10_A/aspx1/Home?DashboardID=174368" height="100%" width="114%" style=" top: -50px; left: -210px; position: absolute;" >
+					</iframe>
 				</div>
 			</div>
-
-			<section class="page-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<h3 style="color: rgb(168, 37, 37); ">Our History</h3>
-							<p>After World War II, a man named Dick Stokes began looking for something new in his life. In 1947, he decided to buy a distributing company based in Hattiesburg, MS and thus created Stokes Distributing Company, Inc. In the beginning, he started with three small trucks in a small warehouse in downtown Hattiesburg to cover Forrest and Perry counties, along with the city limits of Laurel to deliver its beer. It was his dedication to excellent customer service, providing quality life for his employees, and his generosity to the community that has shaped Stokes Distributing Company today.</p>
-							<p>The Company now employs over 65 people, has 2 different locations, and delivers product from the Alabama Line to the Louisiana Line, covering 22 counties with over 15 route trucks.</p>
-						</div>
-						<div class="col-md-6">
-							<div class="about-slider">
-								<a class="about-single-gallery" href="{% static 'stokes\img\meeting-pic.jpg' %}"><img alt="" src="{% static 'stokes\img\meeting-pic.jpg' %}"></a>
-								<a class="about-single-gallery" href="{% static 'stokes\img\crew-pic.jpg' %}"><img alt="" src="{% static 'stokes\img\crew-pic.jpg' %}"></a>
-								<a class="about-single-gallery" href="{% static 'stokes\img\donation-pic.jpg' %}"><img alt="" src="{% static 'stokes\img\donation-pic.jpg' %}"></a>
-								<a class="about-single-gallery" href="{% static 'stokes\img\donation-pic2.jpg' %}"><img alt="" src="{% static 'stokes\img\donation-pic2.jpg' %}"></a>
-								<a class="about-single-gallery" href="{% static 'stokes\img\crew-pic3.jpg' %}"><img alt="" src="{% static 'stokes\img\crew-pic3.jpg' %}"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
 		</main><!-- /.enry-content -->
 
 		<!-- Footer -->
@@ -220,8 +192,8 @@
 						<li><a href="{% url 'about' %}">About</a></li>
 						<li><a href="{% url 'jobs' %}">Jobs</a></li>
 						<li><a href="{% url 'events' %}">Events</a></li>
-						<li><a href="{% url 'beers' %}">Contact</a></li>
-						<li><a href="{% url 'product_finder' %}">Product Finder</a></li>
+                        <li><a href="{% url 'beers' %}">Contact</a></li>
+                        <li><a href="{% url 'product_finder' %}">Product Finder</a></li>
 					</ul>
 				</nav>
 				<a class="close-sidebar" href="javascript:void(0)"><i class="fa fa-times"></i></a>
