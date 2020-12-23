@@ -2745,6 +2745,22 @@ figure:not(.format-video):hover::after,
   display: none !important;
 }
 
+.map-div{
+  height: 800px; 
+  width: 100%; 
+  overflow: hidden; 
+  position: relative; 
+  text-align: center;
+}
+
+.i-frame-map{
+  top: -50px; 
+  left: -210px; 
+  position: absolute; 
+  width: 114%; 
+  height: 100%;
+}
+
 @media all and (max-width: 1200px) {
   .job-description-div{display: block;}
   .job-div{display: block;}
@@ -2760,5 +2776,6 @@ figure:not(.format-video):hover::after,
   .desktop-pic{display: none !important;}
   .mobile-pic{display: block !important;}
   .heading{font-size: 26px;}
+  .i-frame-map{width: 150%;}
 }
 
