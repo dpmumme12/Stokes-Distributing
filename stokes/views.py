@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.mail import EmailMessage
 from .models import application, Event, message, Brand, New_Product
 
 
@@ -56,14 +57,37 @@ def jobs(request):
         Email = request.POST.get("email")
         Resume = request.FILES['resume']
 
-
         applicant = application()
-        applicant.Name = Name
-        applicant.Job_Title = Position
-        applicant.Resume = Resume
-        applicant.Phone_Number = Number
-        applicant.Email = Email
-        applicant.save()
+
+        if (application.objects.filter(Email = Email, Job_Title = Position).exists()):
+
+            app = application.objects.get(Email = Email, Job_Title = Position)
+            app.Name = Name
+            app.Resume = Resume
+            app.Phone_Number = Number
+
+            app.save()
+
+        else:
+            
+            applicant.Name = Name
+            applicant.Job_Title = Position
+            applicant.Resume = Resume
+            applicant.Phone_Number = Number
+            applicant.Email = Email
+            applicant.save()
+
+        applicant_resume = application.objects.filter(Email = Email, Job_Title = Position)
+        applicant_resume = applicant_resume.get()
+
+        email = EmailMessage(
+            'test',
+            'This is a test.',
+            'doug@douglasmumme.com',
+            ['doug@douglasmumme.com']
+        )
+        email.attach_file(applicant_resume.Resume.path)
+        email.send()
 
         return render(request, "stokes/jobs.html", {
             "message": "Application submitted!"
@@ -86,3 +110,7 @@ def events(request):
 def product_finder(request):
     
     return render(request, "stokes/product_finder.html")
+
+def online_order(request):
+
+    return render(request, "stokes/online_order.html")

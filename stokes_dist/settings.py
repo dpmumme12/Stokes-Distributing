@@ -147,3 +147,7 @@ DEFAULT_FILE_STORAGE = 'stokes_dist.storages.MediaStore'
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #MEDIA_URL = '/media/'
 #STATIC_URL = '/static/'
+
+# SendGrid WebAPI Setup
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']

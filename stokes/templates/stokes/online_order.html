@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Stokes Distributing - Beers</title>
+		<title>Stokes Distributing - About</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Coors, Miller, Miller Lite, InBev, Imports, Craft Beer, Abita, Samuel Adams, Hattiesburg, McComb, Mississippi, South Mississippi">
 		<meta name="author" content="Douglas Mumme">
@@ -15,12 +15,11 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="{% static 'stokes/apple-touch-114.png' %}" />
 		<link rel="apple-touch-icon" sizes="72x72" href="{% static 'stokes/apple-touch-72.png' %}" />
 		<link rel="apple-touch-icon" sizes="144x144" href="{% static 'stokes/apple-touch-144.png' %}" />
-		<link rel="icon" href="{% static 'stokes/favicon.ico' %}"/>
+		<link rel="icon" href="{% static 'stokes/favicon.ico' %}" />
 
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro%7CAnton" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:600,900,400' rel='stylesheet' type='text/css'>
-		<script src="https://kit.fontawesome.com/6f6f4c7ab6.js" crossorigin="anonymous"></script>
 
 		<!-- Vendor -->
 		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/normalize.css' %}">
@@ -51,8 +50,10 @@
  		<meta property="og:url" content="www.capitalcitybev.com">
  		<meta property="og:description" content="Product portfolio and corporate information for Capital City Beverage, a beer and light wine distributor in Jackson, Mississippi and Greenwood, Mississippi">
 		
+
 	</head>
 	<body class="page">
+		<!-- Button trigger modal -->
 		<article class="box">
 			<div class="box-left">
 				<br>
@@ -67,7 +68,7 @@
 			  <h3>Age Verification</h3>
 			  <p>By clicking enter, I certify that I am over the age of 21 and will comply with the above statement.</p>
 			  
-			  <a href="{% url 'beers' %}" class="btn btn-alpha"  id="refresh-page">ENTER</a>
+			  <a href="{% url 'about' %}" class="btn btn-alpha"  id="refresh-page">ENTER</a>
 			  
 			  <p class="decor-line"><span>Or</span></p>
 			  
@@ -83,7 +84,7 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div class="header-wrap" style="background-image: url({% static 'stokes\img\20526288_1607887872578460_6708107178514856156_n.jpg' %});">
+		<div class="header-wrap" style="background-image: url({% static 'stokes\img\107979597_3430974780269751_2656095547854316710_o.jpg' %});">
 
 			<!-- Navigation -->
 			<div class="container-fluid">
@@ -99,12 +100,13 @@
 								<li><a href="{% url 'jobs' %}">Jobs</a></li>
 								<li><a href="{% url 'events' %}">Events</a></li>
 								<li><a href="{% url 'contact' %}">Contact</a></li>
-								<li><a href="{% url 'product_finder' %}">Product Finder</a></li>
-								<li><a href="{% url 'online_order' %}">Online Ordering</a></li>
+                                <li><a href="{% url 'product_finder' %}">Product Finder</a></li>
+                                <li><a href="{% url 'online_order' %}">Online Ordering</a></li>
 							</ul>
 						</nav>
 					</div>
-					
+				
+
 					<!-- Mobile Navigation Toggle -->
 					<div class="mobile-toggle topbar-right col-sm-6 col-xs-6 hidden-md hidden-lg">
 						<a href="javascript:void(0);" class="toggle-panel"><i class="fa fa-bars"></i></a>
@@ -117,7 +119,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="page-title"><span>Our Beers</span></h1>
+							<h1 class="page-title"><span>Online Ordering</span></h1>
 						</div>
 					</div>
 				</div>			
@@ -126,7 +128,7 @@
 
 		<!-- Page Content -->
 		<main class="entry-content">
-			
+
 			<!-- Breadcrumbs -->
 			<div class="page-breadcrumbs">
 				<div class="container">
@@ -138,7 +140,7 @@
 									<meta itemprop="position" content="1" />
 								</li>
 								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-									<span itemprop="name">Beers</span>
+									<span itemprop="name">Online Ordering</span>
 									<meta itemprop="position" content="2" />
 								</li>
 							</ol>
@@ -146,74 +148,8 @@
 					</div>
 				</div>
 			</div>
+
 			
-			<div class="container">
-				<div style="width: 100%; margin-top: 30px;">
-					<span>
-						<h2 style="text-align: center; line-height: 80%;">Beer Basics </h2>
-						</span>
-					<hr style="height: 1.5px; border-width: 0; color:lightgray; background-color:lightgray;">
-				</div>
-				<div class="beer-basics">
-					<div class="beer-basic-item">
-						<a href="https://www.pintsandplates.com/beer-style-filter">
-							<img src="{% static 'stokes\img\BeerStyles_Sum.jpg' %}" alt="..." class="beer-basic-image"/>
-						</a>
-						<a href="https://www.pintsandplates.com/beer-style-filter">
-							<h3>Beer Styles</h3>
-						</a>
-						<a href="https://www.pintsandplates.com/beer-style-filter">
-							<p>
-								Hoppy and bitter? Crisp and balanced?&nbsp; Discover your perfect pint, and learn how to pair like a <br>pro.
-								<i class="fas fa-angle-right fa-sm" style="vertical-align: -8%;"></i>
-							</p>
-						</a>
-					</div>
-					<div class="beer-basic-item" style="margin: 0 auto;">
-						<a href="https://www.pintsandplates.com/beer/ales-vs-lagers">
-							<img src="{% static 'stokes\img\BeerBasics_Sum.jpg' %}" alt="..." class="beer-basic-image"/>
-						</a>
-						<a href="https://www.pintsandplates.com/beer/ales-vs-lagers">
-							<h3>Ales Vs. Lagers</h3>
-						</a>
-						<a href="https://www.pintsandplates.com/beer/ales-vs-lagers">
-							<p>
-								If it’s beer, it’s either an ale or a lager. And by learning about both, you’ll be even more ready to pair your plates with delicious pints.
-								<i class="fas fa-angle-right fa-sm" style="vertical-align: -8%;"></i>
-							</p>
-						</a>
-					</div>
-					<div class="beer-basic-item" style="float: right;">
-						<a href="https://www.pintsandplates.com/pairings-and-recipes/7-dip-pairings-for-every-day-of-the-week">
-							<img src="{% static 'stokes\img\DipListacle_Summary_1.jpg' %}" alt="..." class="beer-basic-image"/>
-						</a>
-						<a href="https://www.pintsandplates.com/pairings-and-recipes/7-dip-pairings-for-every-day-of-the-week">
-							<h3>7 Dip Pairings for Your Week</h3>
-						</a>
-						<a href="https://www.pintsandplates.com/pairings-and-recipes/7-dip-pairings-for-every-day-of-the-week">
-							<p>
-								From Manic Monday to Sunday brunch, savor these pairings of tasty dips and unique beers.
-								<i class="fas fa-angle-right fa-sm" style="vertical-align: -8%;"></i>
-							</p>
-						</a>
-					</div>
-				</div>
-					<br>
-					<div class="brand-header">
-                        <h1>Suppliers</h1>
-					</div>
-					
-					<div class="all-brands-div">
-						{% for brand in brands %}
-							<div class="brand-div">
-								<a href="https://stokesdist.com/ECP_20.03_A/aspx1/Home?DashboardID=160701&Query={{brand.Name}}" target="_blank">
-									<img src={{brand.Image.url}}  class="brand-image">
-								</a>
-							</div>
-						{% endfor %}
-					</div>
-				
-			</div>
 		</main><!-- /.enry-content -->
 
 		<!-- Footer -->
@@ -253,9 +189,9 @@
 						<li><a href="{% url 'about' %}">About</a></li>
 						<li><a href="{% url 'jobs' %}">Jobs</a></li>
 						<li><a href="{% url 'events' %}">Events</a></li>
-						<li><a href="{% url 'contact' %}">Contact</a></li>
-						<li><a href="{% url 'product_finder' %}">Product Finder</a></li>
-						<li><a href="{% url 'online_order' %}">Online Ordering</a></li>
+						<li><a href="{% url 'beers' %}">Contact</a></li>
+                        <li><a href="{% url 'product_finder' %}">Product Finder</a></li>
+                        <li><a href="{% url 'online_order' %}">Online Ordering</a></li>
 					</ul>
 				</nav>
 				<a class="close-sidebar" href="javascript:void(0)"><i class="fa fa-times"></i></a>
@@ -269,7 +205,6 @@
 		<div>
 			<a class="back-to-top fa fa-chevron-up" href="javacript:void(0);"></a>
 		</div>
-		
 
 		<!-- Core -->
 		<script src="{% static 'stokes/js/vendor/jquery.min.js' %}"></script>
@@ -295,10 +230,10 @@
 
 		<!-- Vendor (Page Specific) -->
 		<script src="{% static 'stokes/js/vendor/remodal.min.js' %}"></script>
-		<script src="{% static 'stokes/js/vendor/aos.js' %}"></script>
 	   
 		<!-- Theme -->
 		<script src="{% static 'stokes/js/main.js' %}"></script>
 		<script src="{% static 'stokes/js/popup.js' %}"></script>
+
 	</body>
 </html>

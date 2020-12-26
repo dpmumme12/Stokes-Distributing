@@ -11,7 +11,8 @@ urlpatterns = [
     path('contact', views.contact, name='contact'),
     path('events', views.events, name='events'),
     path('jobs', views.jobs, name='jobs'),
-    path('ProductFinder', views.product_finder, name='product_finder')
+    path('ProductFinder', views.product_finder, name='product_finder'),
+    path('OnlineOrdering', views.online_order, name='online_order')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.site.site_header = 'Stokes Distributing Admin'
