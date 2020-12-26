@@ -86,7 +86,7 @@ def jobs(request):
             'doug@douglasmumme.com',
             ['doug@douglasmumme.com']
         )
-        email.attach_file(applicant_resume.Resume.path)
+        email.attach_file(applicant_resume.Resume.url)
         email.send()
 
         return render(request, "stokes/jobs.html", {
