@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
 from .models import application, Event, message, Brand, New_Product
+from pathlib import Path
 
 
 def index(request):
@@ -86,7 +87,7 @@ def jobs(request):
             'doug@douglasmumme.com',
             ['doug@douglasmumme.com']
         )
-        email.attach_file(applicant_resume.Resume.url)
+        email.attach_file(Path(f'media/{applicant_resume.Resume}'))
         email.send()
 
         return render(request, "stokes/jobs.html", {
