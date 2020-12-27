@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
 from .models import application, Event, message, Brand, New_Product
+import boto3
 from pathlib import Path
+import os
 
 
 def index(request):
@@ -52,6 +54,15 @@ def contact(request):
 
 def jobs(request):
     if (request.method == "POST"):
+
+        s3 = boto3.resource(
+        's3',
+        aws_access_key_id=os.environ['S3_KEY'],
+        aws_secret_access_key=os.environ['S3_SECRET'],
+        )
+        bucket = s3.Bucket('django-project-stokes')
+        
+
         Position = request.POST.get("position")
         Name = request.POST.get("name")
         Number = request.POST.get("number")
@@ -80,15 +91,23 @@ def jobs(request):
 
         applicant_resume = application.objects.filter(Email = Email, Job_Title = Position)
         applicant_resume = applicant_resume.get()
-
+        
+        obj = bucket.Object(f'media/{applicant_resume.Resume.name}')
+        
+        obj.download_file(f'{Name}-Resume.pdf')
+            
         email = EmailMessage(
-            'test',
-            'This is a test.',
-            'doug@douglasmumme.com',
-            ['doug@douglasmumme.com']
+        'test',
+        'This is a test.',
+        'doug@douglasmumme.com',
+        ['doug@douglasmumme.com']
         )
-        email.attach_file(Path(f'media/{applicant_resume.Resume}'))
+        
+        email.attach_file(Path(f'{Name}-Resume.pdf'))
         email.send()
+
+        os.remove(f'{Name}-Resume.pdf')
+
 
         return render(request, "stokes/jobs.html", {
             "message": "Application submitted!"
