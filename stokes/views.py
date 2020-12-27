@@ -98,10 +98,10 @@ def jobs(request):
             
         email = EmailMessage(
         f'Application recieved for {Position}',
-        f'Name: {Name}\n 
-        Position: {Position}\n 
-        Phone Number: {Number}\n 
-        Email: {Email}',
+        f"Name: {Name}<br> 
+        Position: {Position}<br>
+        Phone Number: {Number}<br>
+        Email: {Email}",
         'doug@douglasmumme.com',
         ['doug@douglasmumme.com']
         )
