@@ -97,8 +97,11 @@ def jobs(request):
         obj.download_file(f'{Name}-Resume.pdf')
             
         email = EmailMessage(
-        'test',
-        'This is a test.',
+        f'Application recieved for {Position}',
+        f'Name: {Name}\n 
+        Position: {Position}\n 
+        Phone Number: {Number}\n 
+        Email: {Email}',
         'doug@douglasmumme.com',
         ['doug@douglasmumme.com']
         )
@@ -106,7 +109,7 @@ def jobs(request):
         email.attach_file(Path(f'{Name}-Resume.pdf'))
         email.send()
 
-        #os.remove(f'{Name}-Resume.pdf')
+        os.remove(f'{Name}-Resume.pdf')
 
 
         return render(request, "stokes/jobs.html", {
