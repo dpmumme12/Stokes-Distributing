@@ -106,7 +106,7 @@ def jobs(request):
         email.attach_file(Path(f'{Name}-Resume.pdf'))
         email.send()
 
-        os.remove(f'{Name}-Resume.pdf')
+        #os.remove(f'{Name}-Resume.pdf')
 
 
         return render(request, "stokes/jobs.html", {
