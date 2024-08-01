@@ -45,32 +45,32 @@ SERVER_EMAIL = os.environ['EMAIL_HOST_USER']
 ADMINS = [('Doug Mumme', 'dougmumme@gmail.com')]
 
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'simple': {
-            'format': '{levelname} {message}',
-            'style': '{',
-        },
-        'verbose': {
-            '()': 'KnowledgeShare.utils.formatters.XMLLogFormatter'
-        }
-    },
-    'handlers': {
-        'file': {
-            'level': os.environ['LOG_LEVEL'],
-            'class': 'logging.handlers.TimedRotatingFileHandler',
-            'when': 'midnight',
-            'filename': 'logs/log',
-            'formatter': 'verbose',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': os.environ['LOG_LEVEL'],
-            'propagate': True,
-        },
-    },
-}
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {
+#         'simple': {
+#             'format': '{levelname} {message}',
+#             'style': '{',
+#         },
+#         'verbose': {
+#             '()': 'KnowledgeShare.utils.formatters.XMLLogFormatter'
+#         }
+#     },
+#     'handlers': {
+#         'file': {
+#             'level': os.environ['LOG_LEVEL'],
+#             'class': 'logging.handlers.TimedRotatingFileHandler',
+#             'when': 'midnight',
+#             'filename': 'logs/log',
+#             'formatter': 'verbose',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': os.environ['LOG_LEVEL'],
+#             'propagate': True,
+#         },
+#     },
+# }
