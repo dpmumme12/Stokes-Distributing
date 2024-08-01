@@ -1,0 +1,342 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Stokes Distributing - Home</title>
+		<meta name="description" content="Stokes Distributing is the leading supplier of beer and fermented malt liquors in the Pine Belt area. We pride ourselves on offering our customers a wide range of imported and craft beers, along with specialty light wine and malt-based beverages.">
+		<meta name="author" content="Douglas Mumme">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href="https://www.stokesdistributing.com/" />
+		<meta name="google-site-verification" content="zzhguxX-oc4duT4tSPdWCFICmSrttDIH6xGQMvnYado" />
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{% static 'stokes/apple-touch-57.png' %}" />
+		<link rel="apple-touch-icon" sizes="114x114" href="{% static 'stokes/apple-touch-114.png' %}" />
+		<link rel="apple-touch-icon" sizes="72x72" href="{% static 'stokes/apple-touch-72.png' %}" />
+		<link rel="apple-touch-icon" sizes="144x144" href="{% static 'stokes/apple-touch-144.png' %}" />
+		<link rel="icon" href="{% static 'stokes/favicon.ico' %}"/>
+		
+		<!-- Fonts--> 
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro%7CAnton" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Raleway:600,900,400' rel='stylesheet' type='text/css'>
+
+		<!-- Vendor -->
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/normalize.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/font-awesome.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/animate.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/introLoader.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/featherlight.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/slick.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/slick-theme.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/tooltipster.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/selectric.custom.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/main.css' %}">
+		
+		<!-- Page Specific Styles -->
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/aos.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/remodal.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/remodal-default-theme.custom.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'stokes/css/popup.css' %}">
+		<!-- Modernizr -->
+		<script src="{% static 'stokes/js/vendor/modernizr.js' %}"></script>
+
+ 		
+		<meta property="og:site_name" content="Stokes Distributing">
+ 		<meta property="og:title" content="Stokes Distributing">
+ 		<meta property="og:type" content="website" />
+ 		<meta property="og:image" content="{% static 'stokes/favicon.ico' %}"/>
+ 		<meta property="og:url" content="www.stokesdistributing.com">
+		<meta property="og:description" content="Product portfolio and corporate information for Stokes Distributing, a beer and light wine distributor in Hattiesburg, Mississippi and McComb, Mississippi">
+    
+	</head>
+	
+	<body class="home">
+
+		<!-- Button trigger modal -->
+		<article class="box">
+			<div class="box-left">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="box-right">
+			  <h3>Age Verification</h3>
+			  <p>By clicking enter, I certify that I am over the age of 21 and will comply with the above statement.</p>
+			  
+			  <a href="#" class="btn btn-alpha"  id="refresh-page">ENTER</a>
+			  
+			  <p class="decor-line"><span>Or</span></p>
+			  
+			  <a href="#" class="btn btn-beta" id="reset-session">EXIT</a>
+			  
+			  <small>Always enjoy responsibily.</small>
+			</div>
+			</div>
+		  </article>
+		  
+		  <div class="overlay-verify"></div>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="hero-wrap" style="background-image: url({% static 'stokes\img\4.jpg' %});">
+			
+			<!-- Navigation -->
+			<div class="container-fluid">
+				<div class="topbar topbar-hero row">
+					<div class="nav-wrapper col-md-12 hidden-sm hidden-xs">
+						<nav class="list-unstyled main-navigation">
+								<a href="{% url 'stokes:index' %}"><h2 style="display: inline; color: white; font-family: HelveticaNeue-Light;" class="heading">Stokes Distributing</h2></a>
+							<!-- Left Menu -->
+							<ul class="list-unstyled list-inline topbar-right">
+								<li class="current"><a href="{% url 'stokes:index' %}">Home</a></li>
+								<li><a href="{% url 'stokes:beers' %}">Beers</a></li>
+								<li><a href="{% url 'stokes:about' %}">About</a></li>
+								<li><a href="{% url 'stokes:jobs' %}">Jobs</a></li>
+								<li><a href="{% url 'stokes:events' %}">Events</a></li>
+								<li><a href="{% url 'stokes:contact' %}">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+
+					<!-- Mobile Navigation Toggle -->
+					<div class="mobile-toggle topbar-right col-sm-6 col-xs-6 hidden-md hidden-lg">
+						<a href="javascript:void(0);" class="toggle-panel"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Hero Header -->
+			<header class="header header-hero">
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-md-push-0 col-md-9 col-sm-12 col-xs-12">
+								
+								<div class="header-content">
+									<h1 class="title">GREETINGS FROM STOKES DISTRIBUTING</h1>
+									<p class="subtitle">
+										Stokes Distributing is the leading supplier of beer and fermented malt liquors of the greater Pine Belt area.
+										<br>
+										<br>
+										We pride ourselves on offering our customers a wide range of imported and craft beers, along with specialty light wine and malt-based beverages.
+										<br>
+										<br>
+										Stokes Distributing Company is proud to service the counties of; Lamar, Jones, Pike, Lamar, Adams, Marion, Lincoln, Stone, Covington, Jasper, Perry, Lawrence, Jefferson Davis, Greene, Amite, Wilkinson, Franklin, George, Walthall, Jefferson, Smith counties in South Mississippi.</p>
+									<div class="btn-wrap">
+										<a href="{% url 'stokes:about' %}" class="btn btn-hero">Learn More</a>
+										<a href="{% url 'stokes:beers' %}" class="btn btn-hero">Our Beers</a>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-push-0 col-md-3 col-sm-12 col-xs-12" >
+								<img alt="" src="{% static 'stokes\img\STOKES TERRITORY MAP.png' %}" class="map-img">
+								</div>
+							-->
+						</div>
+					</div>
+				</div>				
+			</header>
+			
+			<!-- Hero Start -->
+			<a class="fa fa-chevron-down animated flash infinite hero-start " href="javascript:void(0);"></a>
+		</div>
+		
+		<!-- Page Content -->
+		<main class="entry-content">
+			<section class="page-section home-section no-padding no-margin">
+				<div class="feature-wrapper">
+					<div class="container-fluid">
+						<div class="row no-gutter">
+							<div class="col-md-4">
+								<div class="features-grid">
+									<a href="{% url 'stokes:jobs' %}">
+										<figure>
+											<img alt="" src="{% static 'stokes/img/truly-truck.jpg' %}"/>
+											<figcaption>
+												<h2>Career Opportunities</h2>
+												<p>Check out our career paths.</p>
+											</figcaption>				
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="features-grid">
+									<a href="{% url 'stokes:events' %}">
+										<figure>
+											<img alt="" src="{% static 'stokes/img/meetup-2.jpg' %}" class="desktop-pic"/>
+											<img alt="" src="{% static 'stokes/img/meetup.jpg' %}" class="mobile-pic"/>
+											<figcaption>
+												<h2>Upcoming Events</h2>
+												<p>See our latest events schedule</p>
+											</figcaption>				
+										</figure>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="features-grid">
+									<a href="{% url 'stokes:contact' %}">
+										<figure>
+											<img alt="" src="{% static 'stokes\img\phone.jpg' %}" class="desktop-pic"/>
+											<img alt="" src="{% static 'stokes\img\download.jpg' %}" class="mobile-pic"/>
+											<figcaption>
+												<h2>Get in Touch</h2>
+												<p>Let us know your opinion</p>
+											</figcaption>				
+										</figure>
+									</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Our Beers -->
+			<section class="page-section home-section">
+				<div class="container" data-aos="fade-up" data-aos-offset="200">
+					<div class="new-product-header">
+						<h3 style="color: #d7a63c; font-size: 60px;"><span>CHECK OUT<br/>
+						</span>WHAT’S NEW!</h3>
+					</div>
+					<div class="new-product-carousel">
+						{% for product in new_products %}
+							<div class="client-item" >
+								<img src="{{ product.image_as_base64 }}" alt="{{ product.title }} style="height: 300px; width: auto; margin: 0 auto"/>
+								<h3 class="award-title">{{ product.Title }}</h3>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
+			<!-- Technologies / Clients -->
+			<section class="page-section home-section">
+				<div class="container" data-aos="fade-up" data-aos-offset="200">
+					<h3 class="section-heading"><span>Brands</span></h3>
+					<div class="row">
+						<div class="clients-carousel">
+							{% for brand in brands %}
+								<div class="client-item" style="max-height: 150px; height: auto; width: 150px;" >
+									<a href="{{ brand.brands_website }}" target="_blank"><img src="{{ brand.image_as_base64 }}" alt="{{ brand.name }} class="brand-image"/></a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Locations -->
+			<section class="page-section home-section" >
+				<div class="container" data-aos="fade-up" data-aos-offset="200">
+					<h3 class="section-heading"><span>Find Us</span></h3>
+					<div class="row">
+						<div class="col-md-6">
+							<div> <img src="{% static 'stokes\img\stokes-warehouse-4.jpg' %}" style="width: auto; height: 400px;"></div>
+						</div>
+						<div class="col-md-6">
+							<p style="font-size: 18px;">Stokes Distributing works out of two locations as we proudly service 21 counties across south Mississippi. Our home office located in south Hattiesburg down hwy 49 and we have our branch office located in McComb as well.</p>
+
+							<a class="btn btn-default" href="{% url 'stokes:about' %}">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main><!-- /.enry-content -->
+
+
+			 <!-- Secondary Footer -->
+			<footer class="footer-secondary">
+				<div class="container">
+					<div class="row">
+						<!-- Copyright -->
+						<div class="footer-secondary-left col-lg-8 col-md-6 col-sm-6 col-xs-12">
+							<p style="color: black; margin-top: 15px;">Stokes Distributing encourages adults to drink responsibily.</p>
+						</div>
+						<div class="footer-secondary-right col-lg-4 col-md-6 col-sm-6 col-xs-12">
+							<p style="display: inline-block;"> Social Media:</p>
+							<!-- Social Icons -->
+							<ul class="social-icons list-unstyled list-inline" style="display: inline-block;">
+								<li><a class="fa fa-facebook tooltipster" title="Facebook" href="https://www.facebook.com/stokesdistributing"></a></li>
+								<li><a class="fa fa-twitter tooltipster" title="Twitter" href="https://twitter.com/StokesDist"></a></li>
+								<li><a class="fa fa-instagram tooltipster" title="Instagram" href="https://www.instagram.com/stokesdist/"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- Off-Page Content -->
+
+		<!-- Mobile Navigation (Left Panel) -->
+		<div id="panel-left">
+			<div id="sidebar-wrapper" class="sidebar-wrapper">
+				<nav class="mobile-navigation">
+					<ul class="list-unstyled">
+						<li><a href="{% url 'stokes:index' %}">Home</a></li>
+						<li><a href="{% url 'stokes:beers' %}">Beers</a></li>
+						<li><a href="{% url 'stokes:about' %}">About</a></li>
+						<li><a href="{% url 'stokes:jobs' %}">Jobs</a></li>
+						<li><a href="{% url 'stokes:events' %}">Events</a></li>
+						<li><a href="{% url 'stokes:contact' %}">Contact</a></li>
+					</ul>
+				</nav>
+				<a class="close-sidebar" href="javascript:void(0)"><i class="fa fa-times"></i></a>
+			</div>
+		</div>
+
+		<!-- Preloader -->
+		<div class="introLoading"></div>
+
+		<!-- Back to Top -->
+		<div>
+			<a class="back-to-top fa fa-chevron-up" href="javacript:void(0);"></a>
+		</div>
+		
+
+		<!-- Core -->
+		<script src="{% static 'stokes/js/vendor/jquery.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery-ui.min.js' %}"></script>
+	   
+		<!-- Vendor -->
+		<script src="{% static 'stokes/js/vendor/bootstrap.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.selectric.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/gmaps.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.waypoints.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/SmoothScroll.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.hoverIntent.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.simpler-sidebar.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.introLoader.pack.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/featherlight.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/featherlight.gallery.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/slick.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/jquery.tooltipster.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/imagesloaded.pkgd.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/isotope.pkgd.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/packery-mode.pkgd.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/parsley.min.js' %}"></script>
+
+		<!-- Vendor (Page Specific) -->
+		<script src="{% static 'stokes/js/vendor/remodal.min.js' %}"></script>
+		<script src="{% static 'stokes/js/vendor/aos.js' %}"></script>
+	   
+		<!-- Theme -->
+		<script src="{% static 'stokes/js/main.js' %}"></script>
+		<script src="{% static 'stokes/js/popup.js' %}"></script>
+
+
+
+	</body>
+</html>

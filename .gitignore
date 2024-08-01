@@ -1,0 +1,6 @@
+env/
+.vscode/
+dev_env.json
+logs/*
+stokes_distributing/static_root/*
+db.sqlite3

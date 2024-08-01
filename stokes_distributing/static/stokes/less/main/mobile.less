@@ -1,0 +1,224 @@
+@media (min-width: 1200px) {
+    .features-grid figure {
+        min-height: 274px;
+        max-height: 274px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .entry-content [class*="col-"],
+    .footer-primary [class*="col-"] {
+        margin-bottom: 25px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .entry-content .no-margin [class*="col-"] {
+        margin-bottom: 0!important;
+    }
+
+    .entry-content [class*="col-"]:last-child,
+    .footer-secondary [class*="col-"]:last-child {
+        margin-bottom: 0;
+    }
+
+    [class*="col-"] .row:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .isotope.no-gutter [class*="col-"] {
+        margin-bottom: 0;
+    }
+
+    .isotope-filters button {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+
+    .page-section .row:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .section-services .row {
+        margin-bottom: 50px;
+    }
+
+    .topbar-hero .branding-logo {
+        margin: 0 auto 50px;
+    }
+
+    .features-grid figure {
+        min-height: 267px;
+        max-height: 267px;
+    }
+
+    .modal-beers .image-lightbox {
+        margin-bottom: 30px;
+    }
+
+    .load-more-wrapper {
+        margin: 0;
+    }
+
+    .entry-content .row:last-of-type {
+        margin-bottom: 0!important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .grid figure {
+        min-height: 221px;
+        max-height: 221px;
+    }
+
+    .post-calendar td,
+    .post-calendar th {
+        padding: 0;
+    }
+
+    .page .nav-wrapper {
+        padding: 30px 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .topbar-right {
+        padding: 8px 0;
+    }
+
+    .topbar {
+        padding: 5px 30px;
+
+        & .main-navigation > ul > li {
+            padding-right: 0;
+        }
+    }
+
+    .event-modal-meta {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .header-hero {
+        position: relative;
+        top: 25%;
+        margin-top: 0;
+        .translate(0);
+    }
+
+    .page-title {
+        color: #ffffff;
+        padding: 170px 0 0 0;
+    }
+
+    .header-hero .content .subtitle {
+        font-size: 1.1em;
+    }
+
+    .form-inline .form-group {
+        display: block;
+        text-align: left;
+
+        & .form-control {
+            margin: 0 0 10px 0;
+            width: 100%;
+            max-width: 258px;
+        }
+    }
+
+    .contact-map {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-details {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-inline .form-group {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        & .form-control {
+            margin: 0 auto 10px;
+            width: 100%;
+            max-width: 258px;
+        }
+    }
+
+    /* Row re-order fix for bootstrap
+    * http://stackoverflow.com/a/25715035 */
+    .row.reorder-xs {
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+        direction: rtl; /* Fix the horizontal alignment */
+    }
+
+    .row.reorder-xs > [class*="col-"] {
+        -webkit-transform: rotate(-180deg);
+           -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+             -o-transform: rotate(-180deg);
+                transform: rotate(-180deg);
+        direction: ltr; /* Fix the horizontal alignment */
+    }
+
+    .header-content {
+        padding: 30px;
+    }
+
+    .header .content h1 {
+        font-size: 34px;
+    }
+
+    .footer-secondary ul li:first-of-type {
+        padding-left: 0;
+    }
+
+    .footer-secondary ul li:last-of-type {
+        padding-right: 0;
+    }
+
+    .footer-wrapper .social-icons {
+        margin: 10px auto 0;
+        text-align: center;
+    }
+
+    .testimonial-item {
+        margin: 35px;
+
+        & blockquote::before {
+            display: none;
+        }
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and ( max-width: 766px ) {
+}
+
+@media (max-width: 480px) {
+    .topbar-hero .branding-logo {
+        font-size: 31px;
+    }
+
+    .entry-content .btn {
+        display: block;
+    }
+
+    .btn-centered {
+        margin: 25px auto 0;
+    }
+}

@@ -1,0 +1,32 @@
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: @heading_color;
+    color: #ffffff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    .transform(translate3d(75px,0px,0px); );
+
+    &.active {
+        .opacity-75;
+        .transition-all;
+        .transform(translate3d(0,0,0); );
+    }
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        text-decoration: none;
+        .opacity-full;
+    }
+}
+
+.social-icons-wrapper {
+    text-decoration: none;
+    text-align: right;
+}
