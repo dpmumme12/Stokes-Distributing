@@ -4,7 +4,7 @@ from .base import *
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
-ALLOWED_HOSTS = ['knowledge-shared.com', 'www.knowledge-shared.com']
+ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/', 'https://www.stokesdistributing.com/', 'http://www.stokesdistributing.com/']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -29,13 +29,6 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
 SECURE_SSL_REDIRECT = True
-
-# Cloudinary config for user uploaded media
-CLOUDINARY_STORAGE = {'CLOUD_NAME': os.environ['ClOUDINARY_CLOUD_NAME'],
-                      'API_KEY': os.environ['ClOUDINARY_API_KEY'],
-                      'API_SECRET': os.environ['ClOUDINARY_API_SECRET'], }
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Email Settings
