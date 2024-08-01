@@ -8,7 +8,8 @@ ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/',
                  'https://www.stokesdistributing.com/',
                  'http://www.stokesdistributing.com/',
                  'https://starfish-app-cnau4.ondigitalocean.app',
-                 'http://starfish-app-cnau4.ondigitalocean.app']
+                 'http://starfish-app-cnau4.ondigitalocean.app',
+                 'starfish-app-cnau4.ondigitalocean.app']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
