@@ -4,7 +4,10 @@ from .base import *
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
-ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/', 'https://www.stokesdistributing.com/', 'http://www.stokesdistributing.com/']
+ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/',
+                 'https://www.stokesdistributing.com/',
+                 'http://www.stokesdistributing.com/',
+                 'https://starfish-app-cnau4.ondigitalocean.app']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
