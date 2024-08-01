@@ -11,7 +11,7 @@ ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/',
                  'http://starfish-app-cnau4.ondigitalocean.app']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 # Database
