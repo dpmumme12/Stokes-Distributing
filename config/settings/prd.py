@@ -12,7 +12,7 @@ ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/',
                  'stokes-distributing-645656b0c1e9.herokuapp.com/']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 # Database
