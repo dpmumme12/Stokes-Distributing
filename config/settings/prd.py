@@ -7,9 +7,12 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 ALLOWED_HOSTS = ['http://stokesdistributing.herokuapp.com/',
                  'https://www.stokesdistributing.com/',
                  'http://www.stokesdistributing.com/',
-                 'https://web-production-bcbb.up.railway.app',
-                 'http://web-production-bcbb.up.railway.app',
-                 'web-production-bcbb.up.railway.app']
+                 'https://stokes-distributing-645656b0c1e9.herokuapp.com/',
+                 'http://stokes-distributing-645656b0c1e9.herokuapp.com/',
+                 'stokes-distributing-645656b0c1e9.herokuapp.com/'
+                 'https://stokes-distributing-645656b0c1e9.herokuapp.com/',
+                 'http://stokes-distributing-645656b0c1e9.herokuapp.com/',
+                 'stokes-distributing-645656b0c1e9.herokuapp.com/']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
